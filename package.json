@@ -1,7 +1,7 @@
 {
   "name": "ndjson-whatwg",
   "version": "1.0.0",
-  "description": "Streaming newline delimited json parser + serializer build on the Stream API",
+  "description": "Streaming newline delimited json parser + serializer built on the Streams API",
   "type": "module",
   "source": "src/main.mjs",
   "umd:main": "dist/ndjson-whatwg.umd.js",
