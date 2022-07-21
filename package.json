@@ -1,0 +1,46 @@
+{
+  "name": "ndjson-whatwg",
+  "version": "1.0.0",
+  "description": "Streaming newline delimited json parser + serializer build on the Stream API",
+  "type": "module",
+  "source": "src/main.mjs",
+  "umd:main": "dist/ndjson-whatwg.umd.js",
+  "unpkg": "dist/ndjson-whatwg.umd.js",
+  "browser": "dist/ndjson-whatwg.umd.js",
+  "jsdelivr": "dist/ndjson-whatwg.umd.js",
+  "module": "dist/ndjson-whatwg.es.mjs",
+  "main": "dist/ndjson-whatwg.cjs.js",
+  "exports": {
+    "require": "./dist/ndjson-whatwg.cjs.js",
+    "default": "./dist/ndjson-whatwg.es.mjs"
+  },
+  "node": ">=14.16",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "tap test/*.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrispahm/ndjson-whatwg.git"
+  },
+  "bugs": {
+    "url": "http://github.com/chrispahm/ndjson-whatwg/issues"
+  },
+  "keywords": [
+    "ndjson",
+    "ldjson",
+    "whatwg"
+  ],
+  "author": "Christoph Pahmeyer <christoph.pahmeyer@uni-bonn.de>",
+  "license": "MIT",
+  "dependencies": {
+    "json-stringify-safe": "^5.0.1",
+    "textlinestream": "^1.1.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup": "^2.77.0",
+    "tap": "^16.3.0"
+  }
+}
