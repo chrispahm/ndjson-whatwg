@@ -31,6 +31,7 @@ Parsing it:
 const file = await open(`data.ndjson`);
 
 const readStream = file.readableWebStream()
+  .pipeThrough(new TextDecoderStream())
   .pipeThrough(ndjson.parse())
 
 for await (const obj of readStream) {
